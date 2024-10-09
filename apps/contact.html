@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Meta -->
+  <meta name="description" content="Fut 7 - Montessori">
+  <meta name="author" content="Fut 7 - Montessori">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
+
+  <title>Fut 7 - Montessori</title>
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="../lib/remixicon/fonts/remixicon.css">
+  <link rel="stylesheet" href="../lib/fullcalendar/main.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="../assets/css/style.min.css">
+</head>
+
+<body class="page-app">
+
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <a href="../dashboard/helpdesk.html" class="sidebar-logo">FUT7</a>
+    </div><!-- sidebar-header -->
+    <div id="sidebarMenu" class="sidebar-body">
+      <div class="nav-group show">
+        <ul class="nav nav-sidebar">
+          <li class="nav-item">
+            <a href="../dashboard/helpdesk.html" class="nav-link"><i class="ri-pie-chart-2-line"></i>
+              <span>Inicio</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../apps/calendaradmin.html" class="nav-link"><i class="ri-calendar-fill"></i> <span>Calendario
+                Rentas</span></a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="../apps/emailadmin.html" class="nav-link"><i class="ri-question-answer-line"></i>
+              <span>Chat</span></a>
+          </li> -->
+          <li class="nav-item">
+            <a href="#" class="nav-link active"><i class="ri-contacts-book-line"></i>
+              <span>Contactos</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/faqadmin.html" class="nav-link"><i class="ri-file-text-line"></i>
+              <span>Reglamento</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="../pages/privacypoliciesadmin.html" class="nav-link"><i class="ri-file-text-line"></i>
+              <span>Políticas
+                de Privacidad</span></a>
+          </li>
+        </ul>
+      </div><!-- nav-group -->
+    </div><!-- sidebar-body -->
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-top">
+        <div class="sidebar-footer-thumb">
+          <img src="../assets/img/img1.jpg" alt="">
+        </div><!-- sidebar-footer-thumb -->
+        <div class="sidebar-footer-body">
+          <h6 class="usuarioBarra"><a href="../pages/profileadmin.html">Usuario</a></h6>
+        </div><!-- sidebar-footer-body -->
+        <a id="sidebarFooterMenu" href="" class="dropdown-link"><i class="ri-arrow-down-s-line"></i></a>
+      </div><!-- sidebar-footer-top -->
+      <div class="sidebar-footer-menu">
+        <nav class="nav">
+          <a href="../pages/profileadmin.html"><i class="ri-edit-2-line"></i>Perfil</a>
+        </nav>
+        <hr>
+        <nav class="nav">
+          <a href="../pages/sign-in.html"><i class="ri-logout-box-r-line"></i> Cerrar Sesion</a>
+        </nav>
+      </div><!-- sidebar-footer-menu -->
+    </div><!-- sidebar-footer -->
+  </div><!-- sidebar -->
+
+  <div class="header-main px-3 px-lg-4">
+    <a id="menuSidebarOffset" href="#" class="menu-link me-3 me-lg-4"><i class="ri-menu-2-fill"></i></a>
+    <div class="me-auto">
+
+    </div><!-- form-search -->
+
+    <div class="dropdown dropdown-skin">
+      <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside"><i
+          class="ri-settings-3-line"></i></a>
+      <div class="dropdown-menu dropdown-menu-end mt-10-f">
+        <label>Modo</label>
+        <nav id="skinMode" class="nav nav-skin">
+          <a href="" class="nav-link active">Claro</a>
+          <a href="" class="nav-link">Oscuro</a>
+        </nav>
+      </div><!-- dropdown-menu -->
+    </div><!-- dropdown -->
+
+    <div class="dropdown dropdown-profile ms-3 ms-xl-4">
+      <a href="" class="dropdown-link" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+        <div class="avatar online"><img src="../assets/img/img1.jpg" alt=""></div>
+      </a>
+      <div class="dropdown-menu dropdown-menu-end mt-10-f">
+        <div class="dropdown-menu-body">
+          <div class="avatar avatar-xl online mb-3"><img src="../assets/img/img1.jpg" alt=""></div>
+          <h5 id="usuarioBarra" class="mb-1 text-dark fw-semibold">Usuario</h5>
+
+          <nav class="nav">
+            <a href="../pages/profileadmin.html"><i class="ri-edit-2-line"></i> Perfil</a>
+            <a href="../pages/sign-in.html"><i class="ri-logout-box-r-line"></i> Cerrar Sesion</a>
+          </nav>
+        </div><!-- dropdown-menu-body -->
+      </div><!-- dropdown-menu -->
+    </div><!-- dropdown -->
+  </div><!-- header-main -->
+
+  <div class="main main-app p-3 p-lg-4">
+
+    <div class="contact-panel">
+      <div id="contactSidebar" class="contact-sidebar">
+        <!-- <div class="mb-4">
+          <a href="" class="btn btn-primary btn-contact-new"><i class="ri-add-fill"></i> Añadir Nuevo Cliente</a>
+        </div> -->
+        <nav class="nav nav-sidebar">
+          <!-- <a href="" class="nav-link"><i class="ri-download-2-line"></i> Importar</a> -->
+          <!-- <a href="" class="nav-link" id="exportButton" onclick="exportContacts()"><i class="ri-upload-2-line"></i>Exportar Contactos</a> -->
+          <a id="exportButton" class="nav-link" onclick="exportContacts()"><i class="ri-upload-2-line"></i>Exportar Contactos</a>
+
+        </nav>
+
+        <nav class="nav nav-sidebar">
+          <p class="nav-link active" id="totalContactos"><i class="ri-contacts-fill"></i>Todos los Contactos
+            <small>0</small>
+          </p>
+        </nav>
+
+      </div><!-- contact-sidebar -->
+
+      <div class="contact-body">
+        <div class="contact-list">
+
+          <div id="contactListBody" class="contact-list-body">
+          </div><!-- contact-list-body -->
+
+        </div><!-- contact-list -->
+
+        <div id="contactContent" class="contact-content">
+          <a id="contactClose" href="" class="contact-close"><i class="ri-close-fill"></i></a>
+          <div class="d-sm-flex p-2 p-sm-4 p-md-2 p-xl-4">
+            <div id="cAvatar" class="me-4 mb-3 mb-sm-0">
+              <div class="avatar"><img src="../assets/img/img11.jpg" alt=""></div>
+            </div>
+            <div class="flex-fill">
+              <h4 id="cName" class="mb-1 text-dark fw-semibold">Fut7 Montessori</h4>
+              <!-- <p>Software Engineer at Themepixels, Inc.</p> -->
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-4 text-end text-secondary">Correo</div>
+            <div id="cEmail" class="col">Fut7@Fut7.com</div>
+          </div><!-- row -->
+          <div class="row mt-2">
+            <div class="col-4 text-end text-secondary">Teléfono</div>
+            <div id="cPhone" class="col">5524472623</div>
+          </div><!-- row -->
+
+          <hr>
+
+        </div><!-- contact-content -->
+      </div><!-- contact-body -->
+    </div><!-- contact-panel -->
+
+    <div class="main-footer">
+      <span class="ms-lg-auto"><span class="opacity-50">2024. </span><a href="https://teseodata.com/" target="_blank"
+          class="text-white">Teseo. </a><span class="opacity-50">Todos los derechos reservados.</span></span>
+    </div><!-- main-footer -->
+  </div><!-- main -->
+
+
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+  <script src="../assets/js/script.js"></script>
+  <script>
+    'use strict'
+
+    new PerfectScrollbar('#contactSidebar', {
+      suppressScrollX: true
+    });
+
+    new PerfectScrollbar('#contactListBody', {
+      suppressScrollX: true
+    });
+
+    new PerfectScrollbar('#contactContent', {
+      suppressScrollX: true
+    });
+
+    $('.contact-item').on('click', function (e) {
+      e.preventDefault();
+      $(this).addClass('selected').siblings().removeClass('selected');
+      $(this).closest('.contact-group').siblings().find('.selected').removeClass('selected');
+
+      var avatar = $(this).find('.avatar').clone();
+      var name = $(this).find('h6').text();
+
+      avatar.removeClass('offline online');
+      $('#cAvatar').html(avatar);
+      $('#cName').text(name);
+
+      $('.contact-panel').addClass('contact-show');
+      $('.contact-panel').removeClass('sidebar-show');
+    });
+
+    $('#contactMenu').on('click', function (e) {
+      e.preventDefault();
+      $('.contact-panel').toggleClass('sidebar-show');
+    });
+
+    $('#contactClose').on('click', function (e) {
+      e.preventDefault();
+      $('.contact-panel').removeClass('contact-show');
+    });
+  </script>
+  <script src="../js/contact.js"></script>
+  <script src="../js/exportContacts.js"></script>
+  <script src="../js/nombres.js"></script>
+</body>
+
+</html>
